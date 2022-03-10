@@ -18,7 +18,7 @@ $ oc new-project ns1
 4. Deploy your app to the cluster:
 
 ```bash
-mvn clean package -Dquarkus.kubernetes.deploy=true -Dquarkus.openshift.expose=true -Dquarkus.openshift.labels.app-with-metrics=quarkus-app
+mvn clean package -Dquarkus.kubernetes.deploy=true -Dquarkus.openshift.expose=true -Dquarkus.openshift.labels.app-with-metrics=quarkus-app -Dquarkus.openshift.deployment-kind=Deployment
 ```
 
 5. Create the following service monitor for your app:
